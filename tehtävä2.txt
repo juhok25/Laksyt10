@@ -1,0 +1,14 @@
+Analysoin visual studiolla vanhan shakkiprojektin tässä ongelmat:
+
+asema.h(170,20): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+funktiossa pisteyta_lopputulos
+
+if (onko_ruutu_uhattu(rivi, linja, MUSTA))
+{
+	return -100000 - syvyys;
+
+}
+
+asema.h(195): warning C4715: 'Asema::pisteyta_lopputulos': not all control paths return a value
+
+puuttui return 0; aivan funktion lopusta if lauseiden ulkopuolelta
